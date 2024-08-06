@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of Ganesh Chinchkar</title>
+    <link rel="stylesheet" href="styling.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Mr. Ganesh</a>
+        <nav class="navbar" id="navbar">
+            <a href="#home" style="--i:1" class="active" onclick="scrollToSection('home')">Home</a>
+            <a href="#about" style="--i:2" onclick="scrollToSection('about')">About</a>
+            <a href="#services" style="--i:3" onclick="scrollToSection('services')">Work</a>
+            <a href="#audio" style="--i:4" onclick="scrollToSection('audio')">Audio</a>
+            <a href="#contact" style="--i:5" onclick="scrollToSection('contact')">Contact</a>
+        </nav>
+        <div class="menu-btn" id="menu-btn">
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1> Ganesh Sanyog Chinchakar </h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>Hardworking voiceover artist with three years of experience<br> in dubbing <br> Advertising,Film Industry,Delever high quality voice acting services,and many more...</p>
+            <div class="home-sci">
+                <a href="https://www.facebook.com" style="--i:6"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/ganeshchinchkar25" style="--i:7"><i class='bx bxl-instagram'></i></a>
+                <a href="https://wa.me/qr/FOML23LHIZ36G1" style="--i:8"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.linkedin.com" style="--i:9"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="more_about_me.html" class="btn-box">More About Me</a>
+        </div>
+        <div style=" padding-top: 50px; font-style:tnr; font-size:30px;">
+            <marquee>Contact for more details: 7758827708</marquee>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img"> 
+            <img src="resources/new.png" alt="Ganesh">
+        </div>
+        <div class="about-text">
+            <h2> About <span> Me</span></h2>
+            <h4> Mimicry Artist, Voice Actor And <br> Comedian</h4>
+            <p>
+                Ganesh Chinchakar is a skilled mimicry artist with a wide range of vocal impressions. He has entertained audiences
+                 with his hilarious mimicry of famous personalities, movie dialogues, and cartoon characters.
+                 With his quick wit and impressive vocal range, Ganesh has become a popular performer in the entertainment industry.
+            </p>
+            <a href="more_about_me.html" class="btn-box">More About Me</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">My <span>Work</span></h1>
+            <div class="services-list">
+                <div>
+                    <center><img src="resources/dubbing.png" alt="Voiceover Artist" style="width: 100px; height: 100px;"></center>    
+                    <h2> Voiceover Artist</h2>
+                    <p> As a Voice Over artist, I record the audio for characters in virtual entertainment.
+                        Our Duties may include reading scripts,interpreting character mannerisms following director and writer prompts.
+                    </p>
+                    <a href="#" class="read">Learn More</a>
+                </div>
+                <div>
+                    <center><img src="resources/c1.png" alt="Mimicry Artist" style="width: 90px; height: 90px;"></center>                       
+                    <h2>Mimicry Artist</h2>
+                    <ul>
+                        <li>Celebrity voices</li>
+                        <li>Political leaders</li>
+                        <li>Cartoon characters</li>
+                        <li>Movie dialogues</li>
+                        <li>Instruments: Beat box</li>
+                        <li>Animals: Elephant</li>
+                        <li>Birds: Pigeon, Crow</li>
+                    </ul>
+                    <a href="#" class="read">Learn More</a>
+                </div>
+                <div>
+                    <center><img src="resources/f.png" alt="Performances" style="width: 90px; height: 90px;"></center>                      
+                    <h2> Performances</h2>
+                    <ul>
+                        <li>Stage shows and comedy events</li>
+                        <li>Television appearances (e.g., comedy shows, talent hunts)</li>
+                        <li>Radio shows and podcasts</li>
+                        <li>Corporate events and brand promotions</li>
+                    </ul>
+                    <a href="#" class="read">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <center style="font-size: 40px; padding: 30px; "><h1 class="adv">My<span style="color: #f05fcc;" > Dubbed Videos</span></h1></center>
+
+            <div style="display: flex; gap: 10px; padding: 3%; " >
+                <div style="flex: 1; max-width: 33.333%; overflow: hidden; transition: transform 0.3s ease; transform: scale(1);">
+                    <video controls style="width: 100%; height: auto; display: block;" id="video1"
+                           onmouseover="this.parentElement.style.transform='scale(1.05)'"
+                           onmouseout="this.parentElement.style.transform='scale(1)'">
+                        <source src="resources/Ganesh_Rio_4.00pm.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                <div style="flex: 1; max-width: 33.333%; overflow: hidden; transition: transform 0.3s ease; transform: scale(1);">
+                    <video controls style="width: 100%; height: auto; display: block;" id="video1"
+                           onmouseover="this.parentElement.style.transform='scale(1.05)'"
+                           onmouseout="this.parentElement.style.transform='scale(1)'">
+                        <source src="resources/Ganesh_JB.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                <div style="flex: 1; max-width: 33.333%; overflow: hidden; transition: transform 0.3s ease; transform: scale(1);">
+                    <video controls style="width: 100%; height: auto; display: block;" id="video1"
+                           onmouseover="this.parentElement.style.transform='scale(1.05)'"
+                           onmouseout="this.parentElement.style.transform='scale(1)'">
+                        <source src="resources\Ganesh_Rakshas.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 10px; padding: 3%;">
+                <div style="flex: 1; max-width: 33.333%; overflow: hidden; transition: transform 0.3s ease; transform: scale(1);">
+                    <video controls style="width: 100%; height: auto; display: block;" id="video1"
+                           onmouseover="this.parentElement.style.transform='scale(1.05)'"
+                           onmouseout="this.parentElement.style.transform='scale(1)'">
+                        <source src="resources\Ganesh_Shikshan_4.00PM.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                <div style="flex: 1; max-width: 33.333%; overflow: hidden; transition: transform 0.3s ease; transform: scale(1);">
+                    <video controls style="width: 100%; height: auto; display: block;" id="video1"
+                           onmouseover="this.parentElement.style.transform='scale(1.05)'"
+                           onmouseout="this.parentElement.style.transform='scale(1)'">
+                        <source src="resources\Ganesh_Deul_4.00pm.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div style="flex: 1; max-width: 33.333%; overflow: hidden; transition: transform 0.3s ease; transform: scale(1);">
+                    <video controls style="width: 100%; height: auto; display: block;" id="video1"
+                           onmouseover="this.parentElement.style.transform='scale(1.05)'"
+                           onmouseout="this.parentElement.style.transform='scale(1)'">
+                        <source src="resources\WhatsApp Video 2024-07-28 at 2.00.49 PM.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            
+    </div>
+    </section>
+
+    <section class="audio" id="audio">
+        <div class="container">
+            <h1 class="sub-title">My <span>Audio</span></h1>
+            <div class="audio-list">
+                <div class="audio-box">
+                    <img src="resources/ganesh c.jpeg" alt="Audio Image">
+                    <div class="audio-content">
+                        <h2>Audiobook</h2>
+                        <audio id="audio1" src="resources/Ganesh-MAR_Audiobook.mp3"></audio>
+                        <input type="range" id="seekbar1" min="0" max="100" value="0" step="1" onchange="seekAudio('audio1', this)">
+                        <button class="btn-box" onclick="togglePlayPause('audio1', this)">Play</button>
+                    </div>
+                </div>
+        
+            
+            <div class="audio-box">
+                <img src="resources/ganesh c.jpeg" alt="Audio Image">
+                <div class="audio-content">
+                    <h2>Citation</h2>
+                    <audio id="audio3" src="resources/Ganesh-MAR_Citation.mp3"></audio>
+                    <input type="range" id="seekbar1" min="0" max="100" value="0" step="1" onchange="seekAudio('audio3', this)">
+                    <button class="btn-box" onclick="togglePlayPause('audio3', this)">Play</button>
+                </div>
+            </div>
+       
+      
+        <div class="audio-box">
+            <img src="resources/ganesh c.jpeg" alt="Audio Image">
+            <div class="audio-content">
+                <h2>Swayam</h2>
+                <audio id="audio4" src="resources/Ganesh-MAR_Corp_Swayam.mp3"></audio>
+                <input type="range" id="seekbar1" min="0" max="100" value="0" step="1" onchange="seekAudio('audio4', this)">
+                <button class="btn-box" onclick="togglePlayPause('audio4', this)">Play</button>
+            </div>
+        </div>
+   
+    <div class="audio-box">
+        <img src="resources/ganesh c.jpeg" alt="Audio Image">
+        <div class="audio-content">
+            <h2>Indirasant</h2>
+            <audio id="audio5" src="resources/Ganesh-MAR_Docu_IndiraSant.mp3"></audio>
+            <input type="range" id="seekbar1" min="0" max="100" value="0" step="1" onchange="seekAudio('audio5', this)">
+            <button class="btn-box" onclick="togglePlayPause('audio5', this)">Play</button>
+        </div>
+    </div>
+
+
+<div class="audio-box">
+    <img src="resources/ganesh c.jpeg" alt="Audio Image">
+    <div class="audio-content">
+        <h2>Rangoli</h2>
+        <audio id="audio6" src="resources/Ganesh-MAR_Docu_Rangoli.mp3"></audio>
+        <input type="range" id="seekbar1" min="0" max="100" value="0" step="1" onchange="seekAudio('audio6', this)">
+        <button class="btn-box" onclick="togglePlayPause('audio6', this)">Play</button>
+    </div>
+</div>
+
+
+<div class="audio-box">
+    <img src="resources/ganesh c.jpeg" alt="Audio Image">
+    <div class="audio-content">
+        <h2>Elearning Dataguard</h2>
+        <audio id="audio7" src="resources/Ganesh-MAR_Elearning_Dataguard.mp3"></audio>
+        <input type="range" id="seekbar1" min="0" max="100" value="0" step="1" onchange="seekAudio('audio7', this)">
+        <button class="btn-box" onclick="togglePlayPause('audio7', this)">Play</button>
+    </div>
+</div>
+
+
+<div class="audio-box">
+    <img src="resources/ganesh c.jpeg" alt="Audio Image">
+    <div class="audio-content">
+        <h2>IVR Rigo</h2>
+        <audio id="audio8" src="resources/Ganesh-MAR_IVR_Rigo.mp3"></audio>
+        <input type="range" id="seekbar1" min="0" max="100" value="0" step="1" onchange="seekAudio('audio8', this)">
+        <button class="btn-box" onclick="togglePlayPause('audio8', this)">Play</button>
+    </div>
+</div>
+
+
+<div class="audio-box">
+    <img src="resources/ganesh c.jpeg" alt="Audio Image">
+    <div class="audio-content">
+        <h2>IVR Skyline</h2>
+        <audio id="audio9" src="resources/Ganesh-MAR_IVR_Skyline.mp3"></audio>
+        <input type="range" id="seekbar1" min="0" max="100" value="0" step="1" onchange="seekAudio('audio9', this)">
+        <button class="btn-box" onclick="togglePlayPause('audio9', this)">Play</button>
+    </div>
+</div>
+    </div>
+    <div class="button-container">
+        <a href="Advertising Audio.html" class="advertising-button">Advertising Audio </a>
+
+    </div>
+    <div class="button-container1">
+        <a href="Mimicry audio.html" class="mimicry-button">Mimicry Audio </a>
+
+    </div>
+    </section>
+    
+<section class="contact" id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact <span>Me</span></h1>
+            <form action="#contact_form.php " method="post" onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="mobile_no" placeholder="Your mobile no." required>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                <center><button type="submit" class="btn-box" name="submit">Send Message</button></center>
+            </form>
+        </div>
+        <div style=" padding-top: 10px; font-style:tnr; font-size:30px;">
+            <marquee>Contact for more details: 7758827708</marquee>
+        </div>
+    </section>
+
+    <footer>
+        <div class="home-sci">
+            <center><a href="https://www.facebook.com" style="--i:6"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/ganeshchinchkar25" style="--i:7"><i class='bx bxl-instagram'></i></a>
+            <a href="https://wa.me/qr/FOML23LHIZ36G1" style="--i:8"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://www.linkedin.com" style="--i:9"><i class='bx bxl-linkedin'></i></a></center>
+        </div>
+        <p>Ganesh Chinchkar</p>
+        <p>Thanks for visiting!</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script>
+        var typed = new Typed(".text", {
+            strings: ["Mimicry Artist", "Anchor", "Voiceover Artist", "Dubbing Artist"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+       document.addEventListener('DOMContentLoaded', function() {
+    var audios = document.querySelectorAll('audio');
+
+    function togglePlayPause(audioId, button) {
+        var audio = document.getElementById(audioId);
+
+        audios.forEach(function(otherAudio) {
+            if (otherAudio !== audio) {
+                otherAudio.pause();
+                var otherButton = otherAudio.nextElementSibling;
+                if (otherButton && otherButton.textContent === 'Pause') {
+                    otherButton.textContent = 'Play';
+                }
+            }
+        });
+
+        if (audio.paused) {
+            audio.play();
+            button.textContent = 'Pause';
+        } else {
+            audio.pause();
+            button.textContent = 'Play';
+        }
+    }
+
+    // Expose the function to the global scope
+    window.togglePlayPause = togglePlayPause;
+});
+
+function togglePlayPause(audioId, btn) {
+    var audio = document.getElementById(audioId);
+    if (audio.paused) {
+        audio.play();
+        btn.textContent = "Pause";
+    } else {
+        audio.pause();
+        btn.textContent = "Play";
+    }
+}
+
+function seekAudio(audioId, seekbar) {
+    var audio = document.getElementById(audioId);
+    var seekTo = audio.duration * (seekbar.value / 100);
+    audio.currentTime = seekTo;
+}
+
+document.getElementById('audio1').addEventListener('timeupdate', function() {
+    var seekbar = document.getElementById('seekbar1');
+    var value = (100 / this.duration) * this.currentTime;
+    seekbar.value = value;
+});
+
+
+
+
+
+
+
+        
+
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('navbar').classList.toggle('active');
+        });
+
+        // Automatically set the active link when the page loads based on the URL hash
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const sectionId = window.location.hash.substring(1);
+            if (sectionId) {
+                setActiveLink(sectionId);
+            } else {
+                setActiveLink("home");
+            }
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            var videos = document.querySelectorAll('video');
+
+            videos.forEach(function(video) {
+                video.addEventListener('play', function() {
+                    console.log(`Playing video: ${video.id}`);
+                    videos.forEach(function(otherVideo) {
+                        if (otherVideo !== video) {
+                            console.log(`Pausing video: ${otherVideo.id}`);
+                            otherVideo.pause();
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
