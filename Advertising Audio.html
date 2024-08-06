@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of Ganesh Chinchkar</title>
+    <link rel="stylesheet" href="styling.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <section class="audio" id="audio">
+        <div class="container">
+            <h1 class="sub-title">Advertising <span>Audio</span></h1>
+            <div class="audio-list">
+                <div class="audio-box">
+                    <img src="resources/ganu p.jpeg" alt="Audio Image">
+                    <div class="audio-content">
+                        <h2>Radio Mirchi</h2>
+                        <audio id="audio1" src="resources/Ganesh-MAR_AD_Banya.mp3"></audio>
+                        <input type="range" id="seekbar1" min="0" max="100" value="0" step="1" onchange="seekAudio('audio1', this)">
+                        <button class="btn-box" onclick="togglePlayPause('audio1', this)">Play</button>
+                    </div>
+                </div>
+        
+            
+            <div class="audio-box">
+                <img src="resources/ganu p.jpeg" alt="Audio Image">
+                <div class="audio-content">
+                    <h2>Chandukaka Saraf</h2>
+                    <audio id="audio3" src="resources/Ganesh-MAR_AD_Chandukaka.mp3"></audio>
+                    <input type="range" id="seekbar1" min="0" max="100" value="0" step="1" onchange="seekAudio('audio3', this)">
+                    <button class="btn-box" onclick="togglePlayPause('audio3', this)">Play</button>
+                </div>
+            </div>
+       
+      
+        <div class="audio-box">
+            <img src="resources/ganu p.jpeg" alt="Audio Image">
+            <div class="audio-content">
+                <h2>Chitale Mithai</h2>
+                <audio id="audio4" src="resources/Ganesh-MAR_AD_Chitale.mp3"></audio>
+                <input type="range" id="seekbar1" min="0" max="100" value="0" step="1" onchange="seekAudio('audio4', this)">
+                <button class="btn-box" onclick="togglePlayPause('audio4', this)">Play</button>
+            </div>
+        </div>
+   
+    <div class="audio-box">
+        <img src="resources/ganu p.jpeg" alt="Audio Image">
+        <div class="audio-content">
+            <h2>Kakade Palace</h2>
+            <audio id="audio5" src="resources/Ganesh-MAR_AD_KakadePalace.mp3"></audio>
+            <input type="range" id="seekbar1" min="0" max="100" value="0" step="1" onchange="seekAudio('audio5', this)">
+            <button class="btn-box" onclick="togglePlayPause('audio5', this)">Play</button>
+        </div>
+    </div>
+
+
+<div class="audio-box">
+    <img src="resources/ganu p.jpeg" alt="Audio Image">
+    <div class="audio-content">
+        <h2>More Super Market</h2>
+        <audio id="audio6" src="resources/Ganesh-MAR_AD_More.mp3"></audio>
+        <input type="range" id="seekbar1" min="0" max="100" value="0" step="1" onchange="seekAudio('audio6', this)">
+        <button class="btn-box" onclick="togglePlayPause('audio6', this)">Play</button>
+    </div>
+</div>
+
+
+<div class="audio-box">
+    <img src="resources/ganu p.jpeg" alt="Audio Image">
+    <div class="audio-content">
+        <h2>oppo</h2>
+        <audio id="audio7" src="resources/Ganesh-MAR_AD_Oppo.mp3"></audio>
+        <input type="range" id="seekbar1" min="0" max="100" value="0" step="1" onchange="seekAudio('audio7', this)">
+        <button class="btn-box" onclick="togglePlayPause('audio7', this)">Play</button>
+    </div>
+</div>
+
+
+<div class="audio-box">
+    <img src="resources/ganu p.jpeg" alt="Audio Image">
+    <centre><div class="audio-content">
+        <h2>Nakshatra</h2>
+        <audio id="audio8" src="resources/Ganesh-MAR_WT_Nakshtra.mp3"></audio>
+        <input type="range" id="seekbar1" min="0" max="100" value="0" step="1" onchange="seekAudio('audio8', this)">
+        <button class="btn-box" onclick="togglePlayPause('audio8', this)">Play</button>
+    </div></centre>
+</div>
+</div>
+<center><a href="portfolio.html" class="btn-box" style="margin-top:40px ;">Back to Home</a></center>
+</div>
+    </section>
+    <script>
+         document.addEventListener('DOMContentLoaded', function() {
+    var audios = document.querySelectorAll('audio');
+
+    function togglePlayPause(audioId, button) {
+        var audio = document.getElementById(audioId);
+
+        audios.forEach(function(otherAudio) {
+            if (otherAudio !== audio) {
+                otherAudio.pause();
+                var otherButton = otherAudio.nextElementSibling;
+                if (otherButton && otherButton.textContent === 'Pause') {
+                    otherButton.textContent = 'Play';
+                }
+            }
+        });
+
+        if (audio.paused) {
+            audio.play();
+            button.textContent = 'Pause';
+        } else {
+            audio.pause();
+            button.textContent = 'Play';
+        }
+    }
+
+    // Expose the function to the global scope
+    window.togglePlayPause = togglePlayPause;
+});
+
+function togglePlayPause(audioId, btn) {
+    var audio = document.getElementById(audioId);
+    if (audio.paused) {
+        audio.play();
+        btn.textContent = "Pause";
+    } else {
+        audio.pause();
+        btn.textContent = "Play";
+    }
+}
+
+function seekAudio(audioId, seekbar) {
+    var audio = document.getElementById(audioId);
+    var seekTo = audio.duration * (seekbar.value / 100);
+    audio.currentTime = seekTo;
+}
+
+document.getElementById('audio1').addEventListener('timeupdate', function() {
+    var seekbar = document.getElementById('seekbar1');
+    var value = (100 / this.duration) * this.currentTime;
+    seekbar.value = value;
+});
+
+        </script>
+
+</body>
